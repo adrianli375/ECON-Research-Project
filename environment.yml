@@ -1,0 +1,10 @@
+name: weather
+
+dependencies:
+- python>=3.9
+- matplotlib
+- pandas
+- requests
+- scikit-learn
+- openpyxl
+- tqdm
