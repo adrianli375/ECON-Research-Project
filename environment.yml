@@ -6,5 +6,7 @@ dependencies:
 - pandas
 - requests
 - scikit-learn
+- seaborn
+- statsmodels
 - openpyxl
 - tqdm
