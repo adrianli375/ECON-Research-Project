@@ -1,0 +1,34 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          TotalRainfall   R-squared:                       0.238
+Model:                            OLS   Adj. R-squared:                  0.237
+Method:                 Least Squares   F-statistic:                     342.1
+Date:                Sun, 04 Feb 2024   Prob (F-statistic):               0.00
+Time:                        10:55:00   Log-Likelihood:                -36609.
+No. Observations:                8766   AIC:                         7.324e+04
+Df Residuals:                    8757   BIC:                         7.330e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+const             1120.5229     55.718     20.111      0.000    1011.302    1229.744
+MeanCloudAmount     -0.0569      0.014     -3.943      0.000      -0.085      -0.029
+MeanPressure        -1.1165      0.053    -20.911      0.000      -1.221      -1.012
+TotalEvaporation     0.9337      0.185      5.059      0.000       0.572       1.295
+MeanHumidity         0.4245      0.025     17.076      0.000       0.376       0.473
+MeanTemperature     -0.3960      0.070     -5.651      0.000      -0.533      -0.259
+MeanUVIndex         -4.3013      0.237    -18.120      0.000      -4.767      -3.836
+TotalSunshine        0.0662      0.121      0.547      0.584      -0.171       0.303
+MeanWindSpeed        0.6407      0.059     10.889      0.000       0.525       0.756
+==============================================================================
+Omnibus:                    10653.079   Durbin-Watson:                   1.506
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          2020905.374
+Skew:                           6.416   Prob(JB):                         0.00
+Kurtosis:                      76.269   Cond. No.                     3.37e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.37e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

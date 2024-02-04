@@ -6,7 +6,7 @@ from tqdm import tqdm
 from get_extreme_weather_dates import get_extreme_weather_date_list
 
 START_DATE = datetime(2000, 1, 1)
-END_DATE = datetime(2023, 11, 30)
+END_DATE = datetime(2023, 12, 31)
 
 MEAN_CLOUD_DF = pd.read_csv('raw-data/daily_HKO_CLD_ALL.csv', skiprows=2, skipfooter=4)
 MEAN_PRESSURE_DF = pd.read_csv('raw-data/daily_TKL_MSLP_ALL.csv', skiprows=2, skipfooter=4, encoding_errors='ignore')
@@ -48,7 +48,7 @@ def main():
         total_evaporation = get_value(TOTAL_EVAPORATION_DF, current_year, current_month, current_day)
         total_rainfall = get_value(TOTAL_RAINFALL_DF, current_year, current_month, current_day)
         mean_humidity = get_value(MEAN_HUMIDITY_DF, current_year, current_month, current_day)
-        min_temperature = get_value(MEAN_TEMPERATURE_DF, current_year, current_month, current_day)
+        min_temperature = get_value(MIN_TEMPERATURE_DF, current_year, current_month, current_day)
         mean_temperature = get_value(MEAN_TEMPERATURE_DF, current_year, current_month, current_day)
         max_temperature = get_value(MAX_TEMPERATURE_DF, current_year, current_month, current_day)
         mean_uv_index = get_value(MEAN_UV_INDEX_DF, current_year, current_month, current_day)
