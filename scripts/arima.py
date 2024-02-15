@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error, median_absolute_error, \
-    max_error, mean_absolute_percentage_error
+    max_error
 from statsmodels.tsa.arima.model import ARIMA
 from tqdm import tqdm
 from typing import Tuple
@@ -21,7 +21,7 @@ ORDERS = [ # (p, d, q)
 class ArimaModelProcess:
     def __init__(self):
         self.y_train = None
-        self.y_valid = None
+        self.y_test = None
         self.models = {}
         self.bics = {}
         self.best_model = None
