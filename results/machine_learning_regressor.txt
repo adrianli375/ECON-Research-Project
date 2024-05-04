@@ -1,0 +1,47 @@
+Machine Learning Regressor Results: 
+------------------------------
+Model name: dt
+2024-02-16 17:08:41.696962 Training model...
+2024-02-16 17:08:43.294489 Training completed
+Mean Squared Error = 849.9513698630137
+Root Mean Squared Error = 29.153925462328633
+Mean Absolute Error = 8.2013698630137
+Median Absolute Error = 0.0
+Max Error = 270.0
+------------------------
+Model name: rf
+2024-02-16 17:08:43.330184 Training model...
+2024-02-16 17:09:49.530935 Training completed
+Mean Squared Error = 470.0166684870183
+Root Mean Squared Error = 21.679867815257047
+Mean Absolute Error = 6.686158156911581
+Median Absolute Error = 0.0
+Max Error = 240.75
+------------------------
+Model name: svm
+2024-02-16 17:09:49.602557 Training model...
+2024-02-16 17:09:50.223252 Training completed
+Mean Squared Error = 614.9963539999709
+Root Mean Squared Error = 24.799120024709968
+Mean Absolute Error = 6.11826186408885
+Median Absolute Error = 0.0
+Max Error = 274.5303092275627
+------------------------
+Model name: knn
+2024-02-16 17:09:50.295698 Training model...
+2024-02-16 17:09:50.312920 Training completed
+Mean Squared Error = 555.8929659232423
+Root Mean Squared Error = 23.57738250788756
+Mean Absolute Error = 6.964732254047322
+Median Absolute Error = 0.0
+Max Error = 249.2
+------------------------
+Model name: gamma
+2024-02-16 17:09:50.331428 Training model...
+2024-02-16 17:09:51.646425 Training completed
+Mean Squared Error = 486.0172207156795
+Root Mean Squared Error = 22.04579825535196
+Mean Absolute Error = 6.498120209137243
+Median Absolute Error = 0.0
+Max Error = 226.1606960434834
+------------------------

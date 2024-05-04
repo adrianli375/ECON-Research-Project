@@ -1,0 +1,36 @@
+Apr: Mean = 0.041666666666666664, Variance = 0.04166666666666668
+Fitted distribution: Binomial, n = 1, p = 0.041666666666666664 
+Goodness of fit: chi2 = 2.195091214528032e-30, p-value = 0.9999999999999988
+---------
+May: Mean = 0.08333333333333333, Variance = 0.07971014492753623
+Fitted distribution: Binomial, n = 1, p = 0.08333333333333333 
+Goodness of fit: chi2 = 5.1634531978102566e-30, p-value = 0.9999999999999982
+---------
+Jun: Mean = 0.875, Variance = 0.5489130434782609
+Fitted distribution: Binomial, n = 2, p = 0.4375 
+Goodness of fit: chi2 = 0.11354665322919294, p-value = 0.9448082079709031
+---------
+Jul: Mean = 1.1666666666666667, Variance = 0.7536231884057972
+Fitted distribution: Binomial, n = 3, p = 0.3888888888888889 
+Goodness of fit: chi2 = 0.6449303774316428, p-value = 0.8860738636736546
+---------
+Aug: Mean = 1.3333333333333333, Variance = 0.6666666666666667
+Fitted distribution: Binomial, n = 3, p = 0.4444444444444444 
+Goodness of fit: chi2 = 0.8670000000000008, p-value = 0.833383266486519
+---------
+Sep: Mean = 1.0416666666666667, Variance = 0.6503623188405797
+Fitted distribution: Binomial, n = 3, p = 0.34722222222222227 
+Goodness of fit: chi2 = 0.31716150510002683, p-value = 0.95676920460465
+---------
+Oct: Mean = 0.7083333333333334, Variance = 0.7373188405797101
+Fitted distribution: Binomial, n = 3, p = 0.23611111111111113 
+Goodness of fit: chi2 = 2.012873879584408, p-value = 0.5697389869788045
+---------
+Nov: Mean = 0.08333333333333333, Variance = 0.07971014492753623
+Fitted distribution: Binomial, n = 1, p = 0.08333333333333333 
+Goodness of fit: chi2 = 5.1634531978102566e-30, p-value = 0.9999999999999982
+---------
+Dec: Mean = 0.041666666666666664, Variance = 0.04166666666666667
+Fitted distribution: Binomial, n = 1, p = 0.041666666666666664 
+Goodness of fit: chi2 = 2.195091214528032e-30, p-value = 0.9999999999999988
+---------

@@ -1,0 +1,20 @@
+Signal: 1, Fitted distribution: 0 (w.p. 0.23) & Gamma (w.p. 0.77), 
+alpha = 1.2740228685666066, theta (scale) = 28.850939542483648 
+KS-Test: statistic = 0.08017119310355597, p-value = 0.9559485594836808
+--------
+Signal: 3, Fitted distribution: Gamma, 
+alpha = 1.1966403779101873, theta (scale) = 67.17670999598926 
+KS-Test: statistic = 0.11060407948740263, p-value = 0.6150797407901699
+--------
+Signal: 8, Fitted distribution: Gamma, 
+alpha = 1.5814260635299309, theta (scale) = 66.24756440788049 
+KS-Test: statistic = 0.1334167662045574, p-value = 0.5734558005837547
+--------
+Signal: 9&10, Fitted distribution: Gamma, 
+alpha = 3.9279287169948987, theta (scale) = 37.4101606805293 
+KS-Test: statistic = 0.18910396872460655, p-value = 0.8481411745966071
+--------
+Signal: 8&9&10, Fitted distribution: Gamma, 
+alpha = 1.9146059865384668, theta (scale) = 59.55501604278074 
+KS-Test: statistic = 0.10783767605315653, p-value = 0.6868036478084878
+--------

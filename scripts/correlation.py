@@ -8,7 +8,7 @@ def get_correlation_output():
                      usecols=['MeanCloudAmount', 'MeanPressure', 'TotalEvaporation', 
                               'TotalRainfall', 'MeanHumidity', 'MinTemperature', 
                               'MeanTemperature', 'MaxTemperature', 'MeanUVIndex', 
-                              'TotalSunshine', 'MeanWindSpeed', 'IsExtreme'])
+                              'TotalSunshine', 'MeanWindSpeed', 'IsExtreme', 'TyphoonSignalHoisted'])
     corr_matrix = df.corr()
     plt.figure(figsize=(15, 15))
     sns.heatmap(corr_matrix, annot=True)

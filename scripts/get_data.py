@@ -4,6 +4,8 @@ from tqdm import tqdm
 
 
 from get_extreme_weather_dates import get_extreme_weather_date_list
+from get_typhoon_dates import get_typhoon_date_list
+
 
 START_DATE = datetime(2000, 1, 1)
 END_DATE = datetime(2023, 12, 31)
@@ -20,6 +22,7 @@ MEAN_UV_INDEX_DF = pd.read_csv('raw-data/daily_KP_UV_ALL.csv', skiprows=2, skipf
 TOTAL_SUNSHINE_DF = pd.read_csv('raw-data/daily_KP_SUN_ALL.csv', skiprows=2, skipfooter=4, encoding_errors='ignore')
 MEAN_WINDSPEED_DF = pd.read_csv('raw-data/daily_TKL_WSPD_ALL.csv', skiprows=2, skipfooter=4, encoding_errors='ignore')
 EXTREME_DAYS = get_extreme_weather_date_list()
+TYPHOON_DAYS = get_typhoon_date_list()
 
 def get_value(df: pd.DataFrame, year: int, month: int, day: int):
     try:
@@ -37,7 +40,7 @@ def main():
     df = pd.DataFrame(columns=['Year', 'Month', 'Day', 'Date', 'MeanCloudAmount', 'MeanPressure',
                                'TotalEvaporation', 'TotalRainfall', 'MeanHumidity', 
                                'MinTemperature', 'MeanTemperature', 'MaxTemperature', 
-                               'MeanUVIndex', 'TotalSunshine', 'MeanWindSpeed', 'IsExtreme'])
+                               'MeanUVIndex', 'TotalSunshine', 'MeanWindSpeed', 'IsExtreme', 'TyphoonSignalHoisted'])
     current_date = START_DATE
     pbar = tqdm(total=(END_DATE - START_DATE).days + 1)
     while current_date <= END_DATE:
@@ -55,10 +58,11 @@ def main():
         total_sunshine = get_value(TOTAL_SUNSHINE_DF, current_year, current_month, current_day)
         mean_windspeed = get_value(MEAN_WINDSPEED_DF, current_year, current_month, current_day)
         is_extreme = 1 if current_date in EXTREME_DAYS else 0
+        has_typhoon = 1 if current_date in TYPHOON_DAYS else 0
         data_row = [current_year, current_month, current_day, current_date, mean_cloud, 
                     mean_pressure, total_evaporation, total_rainfall, mean_humidity, min_temperature, 
                     mean_temperature, max_temperature, mean_uv_index, total_sunshine,
-                    mean_windspeed, is_extreme]
+                    mean_windspeed, is_extreme, has_typhoon]
         df.loc[idx] = data_row
         pbar.update(1)
         current_date += timedelta(days=1)

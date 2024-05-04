@@ -1,0 +1,57 @@
+Machine Learning Classifier Results: 
+------------------------------
+Model name: dt
+2024-02-16 23:54:15.361801 Training model...
+2024-02-16 23:54:15.467130 Training completed
+Accuracy = 0.7452054794520548
+Precision = 0.5950413223140496
+Recall = 0.6206896551724138
+f1 = 0.6075949367088607
+Confusion matrix: 
+[[200  49]
+ [ 44  72]]
+------------------------
+Model name: rf
+2024-02-16 23:54:15.513070 Training model...
+2024-02-16 23:54:17.639966 Training completed
+Accuracy = 0.8
+Precision = 0.6936936936936937
+Recall = 0.6637931034482759
+f1 = 0.6784140969162997
+Confusion matrix: 
+[[215  34]
+ [ 39  77]]
+------------------------
+Model name: svm
+2024-02-16 23:54:17.739171 Training model...
+2024-02-16 23:54:21.601862 Training completed
+Accuracy = 0.6657534246575343
+Precision = 0.48695652173913045
+Recall = 0.9655172413793104
+f1 = 0.6473988439306358
+Confusion matrix: 
+[[131 118]
+ [  4 112]]
+------------------------
+Model name: knn
+2024-02-16 23:54:21.905308 Training model...
+2024-02-16 23:54:21.922453 Training completed
+Accuracy = 0.7698630136986301
+Precision = 0.6428571428571429
+Recall = 0.6206896551724138
+f1 = 0.6315789473684211
+Confusion matrix: 
+[[209  40]
+ [ 44  72]]
+------------------------
+Model name: lr
+2024-02-16 23:54:22.021189 Training model...
+2024-02-16 23:54:22.271003 Training completed
+Accuracy = 0.7178082191780822
+Precision = 0.533678756476684
+Recall = 0.8879310344827587
+f1 = 0.6666666666666667
+Confusion matrix: 
+[[159  90]
+ [ 13 103]]
+------------------------
